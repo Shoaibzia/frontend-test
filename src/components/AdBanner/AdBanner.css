@@ -11,6 +11,12 @@
   width: 100%;
 }
 
+@media (max-width: 480px) {
+  .ad-banner {
+    padding: 2.25rem 1rem 0.75rem;
+  }
+}
+
 .ad-banner-close {
   position: absolute;
   top: 0.5rem;
@@ -46,6 +52,14 @@
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .ad-banner-image {
+    width: 100%;
+    height: 16rem;
+    object-fit: contain;
+  }
+}
+
 .ad-banner-image img {
   position: absolute;
   inset: 0;
@@ -53,6 +67,11 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+@media (max-width: 480px) {
+  .ad-banner-image img {
+    object-fit: contain;
+  }
 }
 
 .ad-banner-text {
@@ -83,6 +102,7 @@
 @media (max-width: 480px) {
   .ad-banner-content {
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .ad-banner-cta {
     width: 100%;
