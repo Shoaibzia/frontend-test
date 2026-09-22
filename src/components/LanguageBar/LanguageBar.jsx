@@ -18,18 +18,18 @@ const LanguageBar = () => {
   return (
     <div className="language-bar">
       {/* FROM language */}
-      <div className="language-bar__item">
+      <div className="language-bar-item">
         <button
           type="button"
-          className="language-bar__button"
+          className="language-bar-button"
           onClick={() => toggleDropdown("from")}
         >
           <span>{fromLang}</span>
-          <img src={dropdownArrow} alt="" className="language-bar__chevron" />
+          <img src={dropdownArrow} alt="" className="language-bar-chevron" />
         </button>
 
         {openSide === "from" && (
-          <ul className="language-bar__dropdown">
+          <ul className="language-bar-dropdown">
             {LANGUAGES.map((lang) => (
               <li key={lang}>
                 <button
@@ -48,21 +48,21 @@ const LanguageBar = () => {
       </div>
 
       {/* Direction indicator */}
-      <img src={rightArrow} alt="" className="language-bar__direction" />
+      <img src={rightArrow} alt="" className="language-bar-direction" />
 
       {/* TO language */}
-      <div className="language-bar__item">
+      <div className="language-bar-item">
         <button
           type="button"
-          className="language-bar__button"
+          className="language-bar-button"
           onClick={() => toggleDropdown("to")}
         >
           <span>{toLang}</span>
-          <img src={dropdownArrow} alt="" className="language-bar__chevron" />
+          <img src={dropdownArrow} alt="" className="language-bar-chevron" />
         </button>
 
         {openSide === "to" && (
-          <ul className="language-bar__dropdown">
+          <ul className="language-bar-dropdown">
             {LANGUAGES.map((lang) => (
               <li key={lang}>
                 <button

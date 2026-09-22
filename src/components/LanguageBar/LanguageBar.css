@@ -9,11 +9,11 @@
   padding: 0.75rem 1.25rem;
 }
 
-.language-bar__item {
+.language-bar-item {
   position: relative;
 }
 
-.language-bar__button {
+.language-bar-button {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -25,17 +25,17 @@
   padding: 0;
 }
 
-.language-bar__chevron {
+.language-bar-chevron {
   width: 0.875rem;
   height: 0.75rem;
 }
 
-.language-bar__direction {
+.language-bar-direction {
   width: 1.125rem;
   height: 1.125rem;
 }
 
-.language-bar__dropdown {
+.language-bar-dropdown {
   position: absolute;
   top: calc(100% + 0.5rem);
   left: 0;
@@ -47,7 +47,7 @@
   z-index: 10;
 }
 
-.language-bar__dropdown li button {
+.language-bar-dropdown li button {
   width: 100%;
   text-align: left;
   padding: 0.625rem 1rem;
@@ -57,12 +57,12 @@
   font-size: 0.9375rem;
 }
 
-.language-bar__dropdown li button:hover {
+.language-bar-dropdown li button:hover {
   background: #f3f4f6;
 }
 
 @media (max-width: 480px) {
-  .language-bar__button span {
+  .language-bar-button span {
     font-size: 0.875rem;
   }
 }

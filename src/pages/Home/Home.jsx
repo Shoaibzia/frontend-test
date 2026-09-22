@@ -1,20 +1,36 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import LanguageBar from "../../components/LanguageBar/LanguageBar";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import AdBanner from "../../components/AdBanner/AdBanner";
 import androidIcon from "../../assets/andriodIcon.svg";
 import appleIcon from "../../assets/appleWhiteLogo.svg";
 import emailImage from "../../assets/email.png";
-import wordCards from "../../data/wordCards.json";
+import wordCardsData from "../../data/wordCards.json";
 import "./Home.css";
 
 const Home = () => {
+  const [filteredCards, setFilteredCards] = useState(wordCardsData);
+
+  const handleSearch = useCallback((query) => {
+    const trimmed = query.trim().toLowerCase();
+
+    if (trimmed === "") {
+      setFilteredCards(wordCardsData);
+      return;
+    }
+
+    const results = wordCardsData.filter((card) =>
+      card.word.toLowerCase().includes(trimmed),
+    );
+    setFilteredCards(results);
+  }, []);
+
   return (
     <>
       <section className="hero-section">
         <div className="inner-hero-section">
           <LanguageBar />
-          <SearchBar />
+          <SearchBar onSearch={handleSearch} />
           <AdBanner />
         </div>
       </section>
@@ -22,17 +38,21 @@ const Home = () => {
         <div className="content-grid">
           {/* Left column: word cards */}
           <div className="word-cards-col">
-            {wordCards.map((card) => (
-              <div className="word-card" key={card.id}>
-                <div className="word-card-top">
-                  <h1 className="word-heading heading-1 color-primary font-bold">
-                    {card.type}: {card.word}
-                  </h1>
-                  <p className="word-meaning body-text">{card.meaning}</p>
+            {filteredCards?.length > 0 ? (
+              filteredCards?.map((card) => (
+                <div className="word-card" key={card.id}>
+                  <div className="word-card-top">
+                    <h1 className="word-heading heading-1 color-primary font-bold">
+                      {card.type}: {card.word}
+                    </h1>
+                    <p className="word-meaning body-text">{card.meaning}</p>
+                  </div>
+                  <p className="word-meaning-urdu">{card.meaningUrdu}</p>
                 </div>
-                <p className="word-meaning-urdu">{card.meaningUrdu}</p>
-              </div>
-            ))}
+              ))
+            ) : (
+              <p className="word-meaning">No results found.</p>
+            )}
           </div>
 
           {/* Right column: app download + email promo */}

@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.search-bar__input {
+.search-bar-input {
   flex: 1;
   min-width: 0;
   border: none;
@@ -15,11 +15,11 @@
   color: var(--color-text);
 }
 
-.search-bar__input::placeholder {
+.search-bar-input::placeholder {
   color: #9ca3af;
 }
 
-.search-bar__button {
+.search-bar-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,16 +29,16 @@
   border: none;
 }
 
-.search-bar__button img {
+.search-bar-button img {
   width: 1.5rem;
   height: 1.5rem;
 }
 
 @media (max-width: 480px) {
-  .search-bar__input {
+  .search-bar-input {
     padding: 0.75rem 1rem;
   }
-  .search-bar__button {
+  .search-bar-button {
     width: 3rem;
   }
 }

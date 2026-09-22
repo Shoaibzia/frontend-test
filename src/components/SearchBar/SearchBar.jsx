@@ -1,25 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import searchIcon from "../../assets/searchBlackIcon.svg";
 import "./SearchBar.css";
 
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
+  const debounceTimer = useRef(null);
+
+  useEffect(() => {
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+
+    debounceTimer.current = setTimeout(() => {
+      onSearch(query);
+    }, 500);
+
+    return () => clearTimeout(debounceTimer.current);
+  }, [query, onSearch]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: wire up real search once the dictionary API/route exists
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+    onSearch(query);
   };
 
   return (
     <form className="search-bar" onSubmit={handleSubmit}>
       <input
         type="text"
-        className="search-bar__input heading-3"
+        className="search-bar-input heading-3"
         placeholder="Welcome"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <button type="submit" className="search-bar__button" aria-label="Search">
+      <button type="submit" className="search-bar-button" aria-label="Search">
         <img src={searchIcon} alt="" />
       </button>
     </form>

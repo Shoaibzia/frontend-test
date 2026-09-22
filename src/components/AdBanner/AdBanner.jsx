@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import closeIcon from "../../assets/closeBlackIcon.svg";
+import adImage from "../../assets/couples.jpeg";
 import "./AdBanner.css";
 
 const AD_STORAGE_KEY = "homeAdClosed";
 
 const AdBanner = () => {
-  // Default to hidden until we've checked storage, so a previously-closed ad
-  // never flashes on screen before disappearing.
   const [isClosed, setIsClosed] = useState(true);
 
   useEffect(() => {
@@ -25,20 +24,26 @@ const AdBanner = () => {
     <div className="ad-banner">
       <button
         type="button"
-        className="ad-banner__close"
+        className="ad-banner-close"
         onClick={handleClose}
         aria-label="Close advertisement"
       >
         <img src={closeIcon} alt="" />
       </button>
 
-      <div className="ad-banner__content">
-        <div className="ad-banner__image" />
-        <div className="ad-banner__text">
-          <p className="ad-banner__title">Advertisement</p>
-          <p className="ad-banner__subtitle">Sponsored content placeholder</p>
+      <div className="ad-banner-content">
+        <div className="ad-banner-image">
+          <img src={adImage} alt="Zaroorat rishta in Pakistan" />
         </div>
-        <button type="button" className="ad-banner__cta">
+        <div className="ad-banner-text">
+          <p className="ad-banner-title">Zaroorat rishta in Pakistan</p>
+          <p className="ad-banner-subtitle">
+            Find your perfect life partner with verified profiles across
+            Pakistan. Trusted by thousands of families — start your search today
+            and discover meaningful matches near you.
+          </p>
+        </div>
+        <button type="button" className="ad-banner-cta">
           Open
         </button>
       </div>

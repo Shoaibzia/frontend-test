@@ -30,7 +30,7 @@
   }
 }
 
-/* ===== Content section ===== */
+/* Content section */
 .content-section {
   width: 100%;
   background: var(--color-bg);
@@ -71,7 +71,7 @@
   }
 }
 
-/* ===== Word cards (left column) ===== */
+/* Word cards (left column) */
 .word-cards-col {
   width: 100%;
   display: flex;
@@ -121,6 +121,7 @@
 
 .word-meaning {
   width: 100%;
+  margin: 0;
 }
 
 .word-meaning-urdu {
@@ -129,7 +130,7 @@
   margin: 0 0 0 auto;
 }
 
-/* ===== Side column (app download + email promo) ===== */
+/* Side column (app download + email promo) */
 .side-col {
   width: 100%;
   display: flex;
@@ -216,7 +217,7 @@
   font-size: 1.25rem;
 }
 
-/* ===== Email promo ===== */
+/* Email promo */
 .email-promo {
   width: 100%;
   display: flex;
@@ -259,7 +260,7 @@
   border: none;
 }
 
-/* ===== Other words card ===== */
+/* Other words card */
 .other-words-card {
   width: 100%;
   margin-top: 1rem;

@@ -1,0 +1,15 @@
+{
+  "column1": [
+    { "id": 1, "label": "Home", "url": "#" },
+    { "id": 2, "label": "Thesaurus", "url": "#" },
+    { "id": 3, "label": "Dictionary", "url": "#" },
+    { "id": 4, "label": "Antonyms", "url": "#" },
+    { "id": 5, "label": "Word of Day", "url": "#" },
+    { "id": 6, "label": "Quiz", "url": "#" }
+  ],
+  "column2": [
+    { "id": 1, "label": "About us", "url": "#" },
+    { "id": 2, "label": "Privacy Policy", "url": "#" },
+    { "id": 3, "label": "Contact us", "url": "#" }
+  ]
+}
