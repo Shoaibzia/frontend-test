@@ -51,7 +51,7 @@ const Header = () => {
 
         <nav
           id="primary-navigation"
-          className={`navBar heading-3 ${isOpen ? "navBar--open" : ""}`}
+          className={`navBar container heading-3 ${isOpen ? "navBar--open" : ""}`}
         >
           {NAV_ITEMS.map((item) => (
             <NavLink

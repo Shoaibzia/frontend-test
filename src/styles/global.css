@@ -6,7 +6,7 @@
   --color-bg: #ffffff;
 
   /* Layout */
-  --container-width: 75rem;
+  --container-width: 80rem;
 }
 
 *,
@@ -52,6 +52,10 @@ button {
   margin: 0 auto;
 }
 
+/* html {
+  font-size: 1vw !important;
+} */
+
 /* Typography classes */
 .heading-1 {
   font-size: 2.5rem;
@@ -72,4 +76,169 @@ button {
 .body-text {
   font-size: 1.125rem;
   line-height: normal;
+}
+
+/* Grid Layout for Two Columns */
+.gridTwo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex: 1 1 auto;
+}
+
+.gridBoxTwo {
+  grid-column: span 2;
+}
+
+@media (min-width: 640px) {
+  .gridBoxTwo:last-child:nth-child(2n - 1) {
+    grid-column-end: -2;
+  }
+}
+
+@media not all and (min-width: 640px) {
+  .gridTwo {
+    grid-template-columns: 1fr;
+  }
+  .gridBoxTwo {
+    grid-column: span 1;
+  }
+}
+
+/* Grid Layout for Three Columns */
+.grid-three {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  flex: 1 1 auto;
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+  .grid-three {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gridBox-three {
+  grid-column: span 2;
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+  .gridBox-three:last-child:nth-child(2n - 1) {
+    grid-column-end: -2;
+  }
+
+  .gridBox-three:last-child:nth-child(2n - 2) {
+    grid-column-end: 5;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-three {
+    grid-template-columns: 1fr;
+  }
+
+  .gridBox-three {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridBox-three:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+
+  .gridBox-three:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+
+  .gridBox-three:last-child:nth-child(3n - 2) {
+    grid-column-end: 5;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+  .grid-three {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gridBox-three {
+    grid-column: span 2;
+  }
+
+  .gridBox-three:nth-last-child(2):nth-child(4n - 1),
+  .gridBox-three:last-child:nth-child(4n - 2) {
+    grid-column: span 2;
+  }
+}
+
+/* Grid Layout for Four Columns */
+.four-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.four-gridBox {
+  grid-column: span 2;
+}
+@media (min-width: 800px) and (max-width: 1024px) {
+  .four-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex: 1 1 auto;
+  }
+  .four-gridBox {
+    grid-column: span 2;
+  }
+  .four-gridBox:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+  .four-gridBox:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+  .four-gridBox:last-child:nth-child(3n - 2) {
+    grid-column-end: 5;
+  }
+}
+@media (min-width: 641px) and (max-width: 800px) {
+  .four-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .four-gridBox {
+    grid-column: span 2;
+  }
+  .four-gridBox:last-child:nth-child(2n - 1) {
+    grid-column-end: -2;
+  }
+  .four-gridBox:last-child:nth-child(2n - 2) {
+    grid-column-end: 5;
+  }
+}
+@media (min-width: 1024px) {
+  .four-gridBox:nth-last-child(1):nth-child(4n + 1) {
+    grid-column: 4 / span 2;
+  }
+  .four-gridBox:nth-last-child(2):nth-child(4n + 1) {
+    grid-column: 3 / span 2;
+  }
+  .four-gridBox:nth-last-child(3):nth-child(4n + 1) {
+    grid-column: 2 / span 2;
+  }
+}
+@media (max-width: 640px) {
+  .four-grid {
+    grid-template-columns: 1fr;
+  }
+  .four-gridBox {
+    grid-column: span 1;
+  }
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }

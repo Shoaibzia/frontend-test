@@ -1,0 +1,311 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--color-primary);
+  padding: 4.6875rem 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 1.25rem 1rem;
+  }
+}
+
+.inner-hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
+  max-width: 64.375rem;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .inner-hero-section {
+    gap: 1rem;
+  }
+}
+
+/* ===== Content section ===== */
+.content-section {
+  width: 100%;
+  background: var(--color-bg);
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .content-section {
+    padding-top: 3.8125rem;
+    padding-bottom: 4.6875rem;
+    gap: 4.875rem;
+  }
+}
+
+.content-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* below 768px: single column */
+  gap: 0.625rem;
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-grid {
+    grid-template-columns: auto 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-grid {
+    grid-template-columns: auto 28.375rem;
+    gap: 3.8125rem;
+    padding: 0 2.5rem;
+  }
+}
+
+/* ===== Word cards (left column) ===== */
+.word-cards-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .word-cards-col {
+    align-items: flex-start;
+    gap: 1.875rem;
+  }
+}
+
+.word-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .word-card {
+    gap: 1.5rem;
+  }
+}
+
+.word-card-top {
+  width: 100%;
+  max-width: 26.375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .word-card-top {
+    gap: 2.5rem;
+  }
+}
+
+.word-heading {
+  width: 100%;
+  margin: 0;
+}
+
+.word-meaning {
+  width: 100%;
+}
+
+.word-meaning-urdu {
+  width: 100%;
+  max-width: 26.375rem;
+  margin: 0 0 0 auto;
+}
+
+/* ===== Side column (app download + email promo) ===== */
+.side-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+}
+
+.app-download-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.app-download-header {
+  width: 100%;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8125rem 1.25rem;
+}
+
+.app-download-body {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: var(--color-bg);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8125rem;
+}
+
+@media (min-width: 768px) {
+  .app-download-body {
+    padding-top: 2.625rem;
+    padding-bottom: 2.625rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .app-download-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.app-card {
+  width: 100%;
+  background: #000000;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.app-card-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.app-card-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.app-card-text p {
+  margin: 0;
+  color: var(--color-bg);
+}
+
+.app-card-label {
+  font-size: 1rem;
+}
+
+.app-card-title {
+  font-size: 1.25rem;
+}
+
+/* ===== Email promo ===== */
+.email-promo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.625rem;
+}
+
+.email-promo-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1024px) {
+  .email-promo-img {
+    height: 35.5rem;
+  }
+}
+
+.email-promo-text-wrap {
+  width: 100%;
+  padding: 0.875rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.email-promo-text {
+  width: 100%;
+  max-width: 20.125rem;
+  margin: 0;
+}
+
+.email-promo-button {
+  width: 100%;
+  background: var(--color-yellow);
+  padding: 1.625rem 1.25rem;
+  border: none;
+}
+
+/* ===== Other words card ===== */
+.other-words-card {
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+  background: var(--color-bg);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .other-words-card {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .other-words-card {
+    margin-top: 4.1875rem;
+    padding-top: 1.3125rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 2.375rem;
+    padding-right: 2.375rem;
+    gap: 1.3125rem;
+  }
+}
+
+.other-words-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.625rem !important;
+  margin: 0;
+}
+
+.other-words-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.other-word-item {
+  width: 100%;
+  text-align: start;
+  margin: 0;
+}

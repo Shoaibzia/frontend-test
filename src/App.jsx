@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Dictionary from "./pages/Dictionary";
 import Thesaurus from "./pages/Thesaurus";
 import Synonyms from "./pages/Synonyms";
