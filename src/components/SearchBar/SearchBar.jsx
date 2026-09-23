@@ -41,7 +41,7 @@ const SearchBar = ({ onSearch }) => {
         <input
           type="text"
           className="search-bar-input heading-3"
-          placeholder="Welcome"
+          placeholder="Input the text..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           aria-label="Search input"

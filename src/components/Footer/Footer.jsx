@@ -28,11 +28,13 @@ const Footer = () => {
       <div className="footer-inner-section container">
         {/* Footer 1st column */}
         <div className="footer-1st-col">
-          <img
-            src={urdubanLogo}
-            alt="Urban Logo"
-            className="footer-site-logo"
-          />
+          <a href="/">
+            <img
+              src={urdubanLogo}
+              alt="Urban Logo"
+              className="footer-site-logo"
+            />
+          </a>
           <p>© 2018 Copyright: Urduban</p>
           <p>All Right Reserved.</p>
           <div className="social-icons">

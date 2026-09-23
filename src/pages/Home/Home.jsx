@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 import LanguageBar from "../../components/LanguageBar/LanguageBar";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import AdBanner from "../../components/AdBanner/AdBanner";
-import androidIcon from "../../assets/andriodIcon.svg";
+import androidIcon from "../../assets/playStoreIcon.svg";
 import appleIcon from "../../assets/appleWhiteLogo.svg";
 import emailImage from "../../assets/email.png";
 import wordCardsData from "../../data/wordCards.json";
