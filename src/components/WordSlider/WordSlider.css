@@ -1,0 +1,99 @@
+.word-slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .word-slider {
+    gap: 3.25rem;
+    padding: 0 2.5rem;
+  }
+}
+
+.word-slider-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.word-slider-header h1 {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .word-slider-header h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+.word-slider-arrows {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.word-slider-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0.25rem;
+}
+
+.word-slider-track {
+  width: 100%;
+}
+
+/* Each slide gets horizontal padding to create the gap between cards,
+   since slick doesn't support a native "gap" property */
+.word-slider-slide {
+  padding: 0 1rem 0 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .word-slider-slide {
+    padding: 0 2.5rem 0 0.5rem;
+  }
+}
+
+.word-slider-card {
+  position: relative;
+  background: var(--color-bg);
+  border-bottom: 3px solid var(--color-primary);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  min-height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.word-slider-card-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.word-slider-card-title {
+  margin: 0;
+  font-size: 1.125rem;
+  color: var(--color-text);
+}
+
+.word-slider-card-desc {
+  margin: 0.5rem 0 0;
+  text-align: right;
+  font-size: 1.125rem;
+}

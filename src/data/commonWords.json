@@ -1,0 +1,8 @@
+[
+  { "id": 1, "title": "you're welcome", "description": "خوش آمدید" },
+  { "id": 2, "title": "thank you", "description": "شکریہ" },
+  { "id": 3, "title": "good morning", "description": "صبح بخیر" },
+  { "id": 4, "title": "good night", "description": "شب بخیر" },
+  { "id": 5, "title": "how are you?", "description": "آپ کیسے ہیں؟" },
+  { "id": 6, "title": "I am fine", "description": "میں ٹھیک ہوں" }
+]

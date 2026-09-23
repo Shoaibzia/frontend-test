@@ -7,6 +7,7 @@ import appleIcon from "../../assets/appleWhiteLogo.svg";
 import emailImage from "../../assets/email.png";
 import wordCardsData from "../../data/wordCards.json";
 import "./Home.css";
+import WordSlider from "../../components/WordSlider/WordSlider";
 
 const Home = () => {
   const [filteredCards, setFilteredCards] = useState(wordCardsData);
@@ -45,7 +46,7 @@ const Home = () => {
                     <h1 className="word-heading heading-1 color-primary font-bold">
                       {card.type}: {card.word}
                     </h1>
-                    <p className="word-meaning body-text">{card.meaning}</p>
+                    <p className="word-meaning body-text">{card.description}</p>
                   </div>
                   <p className="word-meaning-urdu">{card.meaningUrdu}</p>
                 </div>
@@ -128,6 +129,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+        {/* Slider */}
+        <WordSlider />
       </div>
     </>
   );

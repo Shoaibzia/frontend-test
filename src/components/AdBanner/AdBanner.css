@@ -43,6 +43,12 @@
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .ad-banner-content {
+    text-align: center !important;
+  }
+}
+
 .ad-banner-image {
   width: 6rem;
   height: 6rem;

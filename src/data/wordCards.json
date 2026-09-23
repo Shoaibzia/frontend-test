@@ -2,22 +2,22 @@
   {
     "id": 1,
     "type": "Verb",
-    "word": "welcome",
-    "meaning": "greet, salute, receive, meet, embrace, fete, usher in, greet, salute, receive, meet, embrace, fete, usher in",
-    "meaningUrdu": "سلام کرنا، سلام کرنا، وصول کرنا، ملنا، گلے لگانا، گلے لگانا، آگہی کرنا، سلام کرنا، سلام کرنا، وصول کرنا، ملنا، گلے لگانا، گلے لگانا، گلے لگانا، اندر داخل ہونا۔"
+    "word": "Ayesha Khan",
+    "description": "28 years old, Masters in Education, based in Lahore. Looking for a well-educated and respectful life partner.",
+    "meaningUrdu": "28 سال، ایم اے ایجوکیشن، لاہور سے تعلق۔ تعلیم یافتہ اور بااخلاق زندگی ساتھی کی تلاش میں۔"
   },
   {
     "id": 2,
     "type": "Verb",
-    "word": "welcome",
-    "meaning": "greet, salute, receive, meet, embrace, fete, usher in, greet, salute, receive, meet, embrace, fete, usher in",
-    "meaningUrdu": "سلام کرنا، سلام کرنا، وصول کرنا، ملنا، گلے لگانا، گلے لگانا، آگہی کرنا، سلام کرنا، سلام کرنا، وصول کرنا، ملنا، گلے لگانا، گلے لگانا، گلے لگانا، اندر داخل ہونا۔"
+    "word": "Bilal Ahmed",
+    "description": "32 years old, Software Engineer in Karachi. Seeking a caring and family-oriented partner.",
+    "meaningUrdu": "32 سال، سافٹ ویئر انجینئر، کراچی سے تعلق۔ خیال رکھنے والی اور خاندان کی پاسداشت کرنے والی ساتھی کی تلاش میں۔"
   },
   {
     "id": 3,
     "type": "Verb",
-    "word": "welcome",
-    "meaning": "greet, salute, receive, meet, embrace, fete, usher in, greet, salute, receive, meet, embrace, fete, usher in",
-    "meaningUrdu": "سلام کرنا، سلام کرنا، وصول کرنا، ملنا، گلے لگانا، گلے لگانا، آگہی کرنا، سلام کرنا، سلام کرنا، وصول کرنا، ملنا، گلے لگانا، گلے لگانا، گلے لگانا، اندر داخل ہونا۔"
+    "word": "Fatima Riaz",
+    "description": "26 years old, Doctor by profession, based in Islamabad. Looking for a sincere and educated match.",
+    "meaningUrdu": "26 سال، پیشے کے لحاظ سے ڈاکٹر، اسلام آباد سے تعلق۔ مخلص اور تعلیم یافتہ رشتے کی تلاش میں۔"
   }
 ]
